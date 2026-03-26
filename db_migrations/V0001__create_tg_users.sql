@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS tg_users (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  avatar TEXT NOT NULL,
+  online BOOLEAN DEFAULT false,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
